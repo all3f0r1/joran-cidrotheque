@@ -47,4 +47,15 @@
 - [x] Vérification du switch de langue
 - [x] Tests responsive sur différents écrans
 - [x] Vérification de l'accessibilité
-- [ ] Checkpoint final avant livraison
+- [x] Checkpoint final avant livraison
+
+## Améliorations visuelles
+- [x] Extraire le logo du PDF (J avec pomme et poire)
+- [x] Intégrer le logo dans le site
+- [x] Générer des photos de l'ambiance du bar
+- [x] Générer des photos des plats (galettes, fromages, charcuterie)
+- [x] Générer des photos des cidres et verres
+- [x] Créer une galerie de photos sur la page d'accueil
+- [x] Ajouter des photos dans les différentes sections
+- [x] Optimiser les images générées
+- [x] Checkpoint final avec les visuels

@@ -8,8 +8,13 @@ export default function About() {
     <div className="py-12">
       <div className="container">
         {/* Hero */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('about.title')}</h1>
+        <div className="relative mb-12">
+          <div className="h-64 md:h-96 overflow-hidden rounded-lg">
+            <img src="/gallery-cider-bottles.jpg" alt="Cider collection" className="w-full h-full object-cover" />
+          </div>
+          <div className="absolute inset-0 bg-black/40 flex items-center justify-center rounded-lg">
+            <h1 className="text-4xl md:text-5xl font-bold text-white">{t('about.title')}</h1>
+          </div>
         </div>
 
         {/* Story Cards */}

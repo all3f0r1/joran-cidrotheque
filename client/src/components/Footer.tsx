@@ -12,9 +12,7 @@ export default function Footer() {
           {/* Logo & Description */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary-foreground">J</span>
-              </div>
+              <img src="/logo-joran.png" alt="JORAN Logo" className="w-12 h-12" />
               <div>
                 <div className="text-xl font-bold text-primary leading-none">JORAN</div>
                 <div className="text-sm text-muted-foreground uppercase tracking-wider">Cidrothèque</div>

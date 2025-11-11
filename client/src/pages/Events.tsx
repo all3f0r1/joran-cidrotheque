@@ -26,11 +26,16 @@ export default function Events() {
     <div className="py-12">
       <div className="container">
         {/* Hero */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('events.title')}</h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t('events.music.title')}
-          </p>
+        <div className="relative mb-12">
+          <div className="h-64 md:h-96 overflow-hidden rounded-lg">
+            <img src="/gallery-music-session.jpg" alt="Music session" className="w-full h-full object-cover" />
+          </div>
+          <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center rounded-lg text-white">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('events.title')}</h1>
+            <p className="text-lg max-w-2xl mx-auto px-4">
+              {t('events.music.title')}
+            </p>
+          </div>
         </div>
 
         {/* Events Grid */}

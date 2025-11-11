@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 import { Clock, Music, MapPin } from "lucide-react";
+import Gallery from "@/components/Gallery";
 
 export default function Home() {
   const { t } = useLanguage();
@@ -48,13 +49,11 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Hours Card */}
-            <Card className="text-center">
+            <Card className="text-center overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img src="/gallery-bar-interior.jpg" alt="Bar interior" className="w-full h-full object-cover" />
+              </div>
               <CardHeader>
-                <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                    <Clock className="h-6 w-6 text-primary" />
-                  </div>
-                </div>
                 <CardTitle>{t('home.hours.title')}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -69,13 +68,11 @@ export default function Home() {
             </Card>
 
             {/* Events Card */}
-            <Card className="text-center">
+            <Card className="text-center overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img src="/gallery-music-session.jpg" alt="Music session" className="w-full h-full object-cover" />
+              </div>
               <CardHeader>
-                <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-secondary/30 flex items-center justify-center">
-                    <Music className="h-6 w-6 text-secondary-foreground" />
-                  </div>
-                </div>
                 <CardTitle>{t('home.events.title')}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -87,13 +84,11 @@ export default function Home() {
             </Card>
 
             {/* Location Card */}
-            <Card className="text-center">
+            <Card className="text-center overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img src="/gallery-terrace.jpg" alt="Terrace" className="w-full h-full object-cover" />
+              </div>
               <CardHeader>
-                <div className="flex justify-center mb-4">
-                  <div className="w-12 h-12 rounded-full bg-accent/30 flex items-center justify-center">
-                    <MapPin className="h-6 w-6 text-accent-foreground" />
-                  </div>
-                </div>
                 <CardTitle>{t('contact.address')}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -107,6 +102,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Gallery Section */}
+      <Gallery />
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">

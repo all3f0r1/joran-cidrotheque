@@ -27,9 +27,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/">
           <div className="flex items-center gap-2 cursor-pointer">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-2xl font-bold text-primary-foreground">J</span>
-            </div>
+            <img src="/logo-joran.png" alt="JORAN Logo" className="w-10 h-10" />
             <div className="hidden sm:block">
               <div className="text-lg font-bold text-primary leading-none">JORAN</div>
               <div className="text-xs text-muted-foreground uppercase tracking-wider">Cidrothèque</div>
