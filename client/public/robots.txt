@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joran-cidrotheque.manus.space/sitemap.xml
