@@ -3,32 +3,28 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Link } from "wouter";
 import { Clock, Music, MapPin } from "lucide-react";
-import Gallery from "@/components/Gallery";
+
 
 export default function Home() {
   const { t } = useLanguage();
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 via-secondary/20 to-background py-20 md:py-32">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="flex justify-center mb-6">
-              <div className="w-24 h-24 rounded-full bg-primary flex items-center justify-center shadow-lg">
-                <span className="text-5xl font-bold text-primary-foreground">J</span>
-              </div>
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">{t('home.hero.title')}</h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              {t('home.hero.subtitle')}
-            </p>
-            <Link href="/menu">
-              <Button size="lg" className="text-lg px-8">
-                {t('home.hero.cta')}
-              </Button>
-            </Link>
+       {/* Hero Section */}
+      <section className="relative min-h-[600px] flex items-center justify-center bg-gradient-to-br from-background via-secondary/5 to-accent/10">
+        <div className="container text-center relative z-10">
+          <div className="mb-6 flex justify-center">
+            <img src="/logo-hero.png" alt="JORAN Cidrothèque Logo" className="w-64 h-auto" />
           </div>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">{t('home.hero.title')}</h1>
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+            {t('home.hero.subtitle')}
+          </p>
+          <Link href="/menu">
+            <Button size="lg" className="text-lg px-8">
+              {t('home.hero.cta')}
+            </Button>
+          </Link>
         </div>
       </section>
 
@@ -51,7 +47,7 @@ export default function Home() {
             {/* Hours Card */}
             <Card className="text-center overflow-hidden">
               <div className="h-48 overflow-hidden">
-                <img src="/gallery-bar-interior.jpg" alt="Bar interior" className="w-full h-full object-cover" />
+                <img src="/real-bar-interior.webp" alt="Bar interior" className="w-full h-full object-cover" />
               </div>
               <CardHeader>
                 <CardTitle>{t('home.hours.title')}</CardTitle>
@@ -70,7 +66,7 @@ export default function Home() {
             {/* Events Card */}
             <Card className="text-center overflow-hidden">
               <div className="h-48 overflow-hidden">
-                <img src="/gallery-music-session.jpg" alt="Music session" className="w-full h-full object-cover" />
+                <img src="/real-cider-tasting.webp" alt="Cider tasting" className="w-full h-full object-cover" />
               </div>
               <CardHeader>
                 <CardTitle>{t('home.events.title')}</CardTitle>
@@ -86,7 +82,7 @@ export default function Home() {
             {/* Location Card */}
             <Card className="text-center overflow-hidden">
               <div className="h-48 overflow-hidden">
-                <img src="/gallery-terrace.jpg" alt="Terrace" className="w-full h-full object-cover" />
+                <img src="/real-terrace-exterior.webp" alt="Terrace" className="w-full h-full object-cover" />
               </div>
               <CardHeader>
                 <CardTitle>{t('contact.address')}</CardTitle>
@@ -102,9 +98,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Gallery Section */}
-      <Gallery />
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-br from-primary to-primary/80 text-primary-foreground">

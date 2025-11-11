@@ -28,7 +28,7 @@ export default function Events() {
         {/* Hero */}
         <div className="relative mb-12">
           <div className="h-64 md:h-96 overflow-hidden rounded-lg">
-            <img src="/gallery-music-session.jpg" alt="Music session" className="w-full h-full object-cover" />
+            <img src="/real-cider-tasting.webp" alt="Cider tasting" className="w-full h-full object-cover" />
           </div>
           <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center rounded-lg text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('events.title')}</h1>

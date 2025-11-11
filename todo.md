@@ -59,3 +59,11 @@
 - [x] Ajouter des photos dans les différentes sections
 - [x] Optimiser les images générées
 - [x] Checkpoint final avec les visuels
+
+## Modifications demandées
+- [x] Récupérer les vraies photos depuis Google Maps
+- [x] Créer le logo de devanture JORAN (avec contours pomme/poire)
+- [x] Remplacer le J simple par le logo de devanture sur la page d'accueil
+- [x] Supprimer la galerie de photos IA
+- [x] Intégrer les vraies photos dans le site
+- [x] Checkpoint final avec vraies photos
