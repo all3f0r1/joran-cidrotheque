@@ -27,7 +27,7 @@ export default function Events() {
       <div className="container">
         {/* Hero */}
         <div className="relative mb-12">
-          <div className="h-64 md:h-96 overflow-hidden rounded-lg">
+          <div className="h-64 md:h-96 overflow-hidden rounded-lg flex items-center justify-center">
             <img src="/real-cider-tasting.webp" alt="Cider tasting" className="w-full h-full object-cover" />
           </div>
           <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center rounded-lg text-white">

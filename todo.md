@@ -67,3 +67,9 @@
 - [x] Supprimer la galerie de photos IA
 - [x] Intégrer les vraies photos dans le site
 - [x] Checkpoint final avec vraies photos
+
+## Dernières modifications
+- [x] Fusionner les sections "JORAN - Cidrothèque" et "Bienvenue à la Cidrothèque"
+- [x] Centrer horizontalement les images de chaque section
+- [x] Finaliser la traduction anglaise du menu
+- [x] Push sur GitHub

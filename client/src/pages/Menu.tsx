@@ -1,16 +1,18 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { menuData } from '@/lib/menuData';
+import { menuTranslations } from '@/lib/menuTranslations';
 
 export default function Menu() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const trans = menuTranslations[language];
 
   return (
     <div className="py-12">
       <div className="container">
         {/* Hero Section */}
         <div className="relative mb-12">
-          <div className="h-64 md:h-80 overflow-hidden rounded-lg">
+          <div className="h-64 md:h-80 overflow-hidden rounded-lg flex items-center justify-center">
             <img src="/real-terrace-exterior.webp" alt="JORAN exterior" className="w-full h-full object-cover" />
           </div>
           <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center rounded-lg text-white">
@@ -39,8 +41,8 @@ export default function Menu() {
               {menuData.tastingFlights.map((item, index) => (
                 <Card key={index} className="hover:shadow-lg transition-shadow">
                   <CardHeader>
-                    <CardTitle className="text-lg">{item.name}</CardTitle>
-                    <CardDescription>{item.description}</CardDescription>
+                    <CardTitle className="text-lg">{trans.tastingFlights[index].name}</CardTitle>
+                    <CardDescription>{trans.tastingFlights[index].description}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="text-2xl font-bold text-primary">{item.price}€</div>
@@ -70,7 +72,7 @@ export default function Menu() {
                       <span>{item.name}</span>
                       <span className="text-primary font-bold">{item.price}€</span>
                     </CardTitle>
-                    <CardDescription>{item.description}</CardDescription>
+                    <CardDescription>{trans.beers[index].description}</CardDescription>
                   </CardHeader>
                 </Card>
               ))}
@@ -85,7 +87,7 @@ export default function Menu() {
                 <Card key={index}>
                   <CardHeader>
                     <CardTitle className="text-base">{item.name}</CardTitle>
-                    <CardDescription>{item.description}</CardDescription>
+                    <CardDescription>{trans.wines[index].description}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="flex justify-between text-sm">
@@ -110,7 +112,7 @@ export default function Menu() {
                 <Card key={index}>
                   <CardHeader>
                     <CardTitle className="text-sm flex justify-between items-start">
-                      <span>{item.name}</span>
+                      <span>{trans.nonAlcoholic[index].name}</span>
                       <span className="text-primary font-bold">{item.price}€</span>
                     </CardTitle>
                     {item.size && <CardDescription>{item.size}</CardDescription>}
@@ -134,7 +136,7 @@ export default function Menu() {
                       <span>{item.name}</span>
                       <span className="text-primary font-bold">{item.price}€</span>
                     </CardTitle>
-                    <CardDescription>{item.description}</CardDescription>
+                    <CardDescription>{trans.ratafia[index].description}</CardDescription>
                   </CardHeader>
                 </Card>
               ))}
@@ -155,7 +157,7 @@ export default function Menu() {
                       <span>{item.name}</span>
                       <span className="text-primary font-bold">{item.price}€</span>
                     </CardTitle>
-                    <CardDescription>{item.description}</CardDescription>
+                    <CardDescription>{trans.spirits[index].description}</CardDescription>
                   </CardHeader>
                 </Card>
               ))}
@@ -170,7 +172,7 @@ export default function Menu() {
                 <Card key={index}>
                   <CardHeader>
                     <CardTitle className="text-base flex justify-between items-start">
-                      <span>{item.name}</span>
+                      <span>{trans.food[index].name}</span>
                       <span className="text-primary font-bold">{item.price}€</span>
                     </CardTitle>
                   </CardHeader>
@@ -189,7 +191,7 @@ export default function Menu() {
                 <Card key={index}>
                   <CardHeader>
                     <CardTitle className="text-base flex justify-between items-start">
-                      <span>{item.name}</span>
+                      <span>{trans.galettes[index].name}</span>
                       <span className="text-primary font-bold">{item.price}€</span>
                     </CardTitle>
                   </CardHeader>
@@ -204,7 +206,7 @@ export default function Menu() {
             <Card className="max-w-md">
               <CardHeader>
                 <CardTitle className="text-base flex justify-between items-start">
-                  <span>{menuData.dessert.name}</span>
+                  <span>{trans.dessert.name}</span>
                   <span className="text-primary font-bold">{menuData.dessert.price}€</span>
                 </CardTitle>
               </CardHeader>

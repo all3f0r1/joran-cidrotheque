@@ -9,7 +9,7 @@ export default function About() {
       <div className="container">
         {/* Hero */}
         <div className="relative mb-12">
-          <div className="h-64 md:h-96 overflow-hidden rounded-lg">
+          <div className="h-64 md:h-96 overflow-hidden rounded-lg flex items-center justify-center">
             <img src="/real-bar-interior.webp" alt="Cider collection" className="w-full h-full object-cover" />
           </div>
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center rounded-lg">

@@ -17,8 +17,11 @@ export default function Home() {
             <img src="/logo-hero.png" alt="JORAN Cidrothèque Logo" className="w-64 h-auto" />
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-4">{t('home.hero.title')}</h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
             {t('home.hero.subtitle')}
+          </p>
+          <p className="text-lg text-muted-foreground mb-8 max-w-3xl mx-auto">
+            {t('home.about.description')}
           </p>
           <Link href="/menu">
             <Button size="lg" className="text-lg px-8">
@@ -28,25 +31,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section className="py-16 bg-card">
-        <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">{t('home.about.title')}</h2>
-            <p className="text-lg text-muted-foreground">
-              {t('home.about.description')}
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Info Cards */}
       <section className="py-16">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Hours Card */}
             <Card className="text-center overflow-hidden">
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden flex items-center justify-center">
                 <img src="/real-bar-interior.webp" alt="Bar interior" className="w-full h-full object-cover" />
               </div>
               <CardHeader>
@@ -65,7 +56,7 @@ export default function Home() {
 
             {/* Events Card */}
             <Card className="text-center overflow-hidden">
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden flex items-center justify-center">
                 <img src="/real-cider-tasting.webp" alt="Cider tasting" className="w-full h-full object-cover" />
               </div>
               <CardHeader>
@@ -81,7 +72,7 @@ export default function Home() {
 
             {/* Location Card */}
             <Card className="text-center overflow-hidden">
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden flex items-center justify-center">
                 <img src="/real-terrace-exterior.webp" alt="Terrace" className="w-full h-full object-cover" />
               </div>
               <CardHeader>
