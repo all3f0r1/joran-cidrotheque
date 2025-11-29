@@ -13,7 +13,7 @@ export default function Menu() {
         {/* Hero Section */}
         <div className="relative mb-12">
           <div className="h-64 md:h-80 overflow-hidden rounded-lg flex items-center justify-center">
-            <img src="/real-terrace-exterior.webp" alt="JORAN exterior" className="w-full h-full object-cover" />
+            <img src="/real-terrace-exterior.webp" alt="JORAN exterior" className="w-full h-full object-cover object-center" />
           </div>
           <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center rounded-lg text-white">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">{t('menu.title')}</h1>

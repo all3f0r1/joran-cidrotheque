@@ -22,7 +22,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/60">
+    <header className="sticky top-0 z-50 w-full border-b border-amber-200 bg-gradient-to-r from-amber-50 to-orange-50 backdrop-blur supports-[backdrop-filter]:bg-amber-50/90 dark:from-slate-900 dark:to-slate-800 dark:border-slate-700">
       <div className="container flex h-16 items-center justify-between">
         {/* Logo */}
         <Link href="/">

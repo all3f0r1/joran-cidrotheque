@@ -21,10 +21,11 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Home
     'home.hero.title': 'JORAN - Cidrothèque',
-    'home.hero.subtitle': 'Le premier bar et caviste dédié aux cidres en Belgique',
+    'home.hero.subtitle': 'Degemer mat e ti ar sistr !',
+    'home.hero.welcome': 'Bienvenue dans la première cidrothèque de Belgique',
     'home.hero.cta': 'Découvrir le menu',
     'home.about.title': 'Bienvenue à la Cidrothèque',
-    'home.about.description': 'JORAN – Cidrothèque est le premier bar et caviste dédié aux cidres en Belgique ! Venez découvrir plus de 150 références de cidres et poirés en bouteille et au fût.',
+    'home.about.description': 'Au cœur de Schaerbeek, JORAN vous invite à découvrir l\'art du cidre breton et européen. Plus de 150 références de cidres et poirés artisanaux, 14 pressions qui changent au fil des saisons, et l\'ambiance chaleureuse d\'un authentique bar breton. Kenavo les bières, place au jus de pomme fermenté !',
     'home.hours.title': 'Horaires',
     'home.hours.wed-sun': 'Mercredi - Dimanche',
     'home.hours.time': '17h30 - 01h00',
@@ -97,10 +98,11 @@ const translations: Record<Language, Record<string, string>> = {
     
     // Home
     'home.hero.title': 'JORAN - Cidrothèque',
-    'home.hero.subtitle': 'The first bar and bottle shop dedicated to cider in Belgium',
+    'home.hero.subtitle': 'Degemer mat e ti ar sistr !',
+    'home.hero.welcome': 'Welcome to Belgium\'s first cidrothèque',
     'home.hero.cta': 'Discover the menu',
     'home.about.title': 'Welcome to Cidrothèque',
-    'home.about.description': 'JORAN – Cidrothèque is the first bar and bottle shop dedicated to cider in Belgium! Discover more than 150 ciders and perries in bottles and on tap.',
+    'home.about.description': 'In the heart of Schaerbeek, JORAN invites you to discover the art of Breton and European cider. More than 150 references of artisanal ciders and perries, 14 taps that change with the seasons, and the warm atmosphere of an authentic Breton bar. Kenavo beers, make way for fermented apple juice!',
     'home.hours.title': 'Opening Hours',
     'home.hours.wed-sun': 'Wednesday - Sunday',
     'home.hours.time': '5:30 PM - 1:00 AM',

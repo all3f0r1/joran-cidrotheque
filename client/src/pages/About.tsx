@@ -10,7 +10,7 @@ export default function About() {
         {/* Hero */}
         <div className="relative mb-12">
           <div className="h-64 md:h-96 overflow-hidden rounded-lg flex items-center justify-center">
-            <img src="/real-bar-interior.webp" alt="Cider collection" className="w-full h-full object-cover" />
+            <img src="/real-bar-interior.webp" alt="Cider collection" className="w-full h-full object-cover object-center" />
           </div>
           <div className="absolute inset-0 bg-black/40 flex items-center justify-center rounded-lg">
             <h1 className="text-4xl md:text-5xl font-bold text-white">{t('about.title')}</h1>
